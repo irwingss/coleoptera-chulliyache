@@ -102,7 +102,7 @@ mean(diversity_data$Simpson)
 sd(diversity_data$Simpson)
 
 # ──────────────────────────────
-# 6. ANOVA by Zone
+# 6. Kruskal-Wallis by Zone
 # ──────────────────────────────
 
 diversity_data_sha %>% group_by(Zona) %>% 
@@ -184,7 +184,7 @@ ggsave("figures/NEW_Boxplot_ZONE.png", ZONE,
 
 
 # ──────────────────────────────
-# 7. ANOVA by Decomposition Stage
+# 7. Kruskal-Wallis by Decomposition Stage
 # ──────────────────────────────
 
 diversity_data_sha %>% group_by(Condición) %>% 
@@ -266,7 +266,7 @@ ggsave("figures/NEW_Boxplot_COMPO.png", COMPO,
        width = 40, height = 16, units = "cm", dpi = 600)
 
 # ──────────────────────────────
-# 8. ANOVA by Vertebrate Species
+# 8. Kruskal-Wallis by Vertebrate Species
 # ──────────────────────────────
 
 diversity_data_sha %>% group_by(Especie.de.vertebrado) %>% 
